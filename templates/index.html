@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+	<title>Flask Server - JhonatanLamiña</title>
+	<link rel="shortcut icon" href="/static/images/python-flask.png">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+</head>
+<body>
+	<div class='nav'>
+		<h1 id='t1'>Flask Server</h1>
+		<p id='t2'>For more information visit <a id='t2' href="https://jhonatanlamina.com" target="_blank" title="Go to www.jhonatanlamina.com">www.jhonatanlamina.com</a></p>
+	</div>
+	<div class="home">
+		<center>
+			<div class="control">
+				<img id="image" src="/static/images/python-flask.png" alt="imagen">
+				<h1 id="t3">State:</h1>
+				<h1 id="state">Connecting...</h1>
+				<hr id="myline1" class="myline">
+				<h1 id="t4">Sensors:</h1>
+				<h1 id="sensor1">--</h1>
+				<h1 id="sensor2">--</h1>
+				<hr id="myline2" class="myline">
+				<br>
+				<button id='btn1' type="button" onclick="btn1();">ON</button>
+				<button id='btn2' type="button" onclick="btn2();">OFF</button>
+			</div>
+		</center>
+	</div>
+	</script><script src="/static/js/index.js"></script>
+</body>
+</html>
