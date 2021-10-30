@@ -54,7 +54,7 @@ function doFail(e){
 function onConnectionLost(responseObject) {
   if (responseObject.errorCode != 0) {
     console.log("Connection Lost:"+responseObject.errorMessage);
-    document.getElementById("state").innerHTML="Connection Lost";
+    document.getElementById("state").innerHTML="Lost Connection";
     document.getElementById("t4").remove();
     document.getElementById("myline1").remove();
     document.getElementById("myline2").remove();
