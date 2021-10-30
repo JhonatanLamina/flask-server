@@ -52,8 +52,16 @@ function doFail(e){
 }
 //Called when the client loses its connection
 function onConnectionLost(responseObject) {
-  if (responseObject.errorCode !== 0) {
-    console.log("onConnectionLost:"+responseObject.errorMessage);
+  if (responseObject.errorCode != 0) {
+    console.log("Connection Lost:"+responseObject.errorMessage);
+    document.getElementById("state").innerHTML="Connection Lost";
+    document.getElementById("t4").remove();
+    document.getElementById("myline1").remove();
+    document.getElementById("myline2").remove();
+    document.getElementById("sensor1").remove();
+    document.getElementById("sensor2").remove();
+    document.getElementById("btn1").remove();
+    document.getElementById("btn2").remove();
   }
 }
 //Called when a message arrives
